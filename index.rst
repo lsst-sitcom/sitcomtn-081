@@ -40,7 +40,7 @@ Identification of slews
 Just to show an example of how I am identifying oscillation events.
 In this plot I show the elevation of the TMA as an orange line the points show a rolling standard deviation of the hardpoint measured forces. The red diamonds are identified events. They have a large peak in the rolling standard deviation in at least 4 hardpoints during a slew.
 
-.. image:: ./_static/identify_events.png
+.. image:: ./_static/Identify_events.png
 
 Here is the distribution in elevation vs time of the identified events the color shows the direction of the slew.
 
