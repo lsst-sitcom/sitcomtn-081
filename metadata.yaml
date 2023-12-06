@@ -13,7 +13,7 @@ serial_number: "081"
 doc_id: "SITCOMTN-081"
 
 # Title of the document, without the series/serial designation
-doc_title: "Hardpoint oscillations during elevation slews"
+doc_title: "Oscillations in M1M3"
 
 # Author names, ordered as a list. Each author name should be formatted as 'First Last'
 authors:
