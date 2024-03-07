@@ -1,6 +1,12 @@
-:tocdepth: 1
+#############################################
+Hardpoint oscillations during elevation slews
+#############################################
 
-.. sectnum::
+.. abstract::
+
+   This is linked to SITCOM-918
+
+
 
 .. Metadata such as the title, authors, and description are set in metadata.yaml
 
