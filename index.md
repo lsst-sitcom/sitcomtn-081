@@ -161,7 +161,17 @@ PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 s
 
 ## Vibration due to the topple block
 
-There are two topple blocks at az~-75 and az~-53 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
+There are two topple blocks at az~-70 and az~-50 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
+
+On 2023 November 29, this is the histogram of the angle where vibration event due to topple blcok was happening.
+:::{figure} ./_static/20231129_toppleblock_position.png
+:name: histogram_angle_topple_block
+:target: ../_images/20231129_toppleblock_position.png
+:::
+
+The result matched with the actual position of the topple block, and it hits the topple block according to the direction TMA is rotating from, +- 00 degrees from the center of topple block. 
+
+Following plots show one event of vibration while TMA was moving in azimuth from -25 to -125 degrees.
 
 :::{figure} ./_static/20231129_MTM1M3_vibration.png
 :name: vibration_during_az_slew_toppleblock
@@ -173,6 +183,12 @@ There are two topple blocks at az~-75 and az~-53 to detect the direction of the 
 :target: ../_images/20231129_MTM1M3_zoomin.png
 :::
 
+Vibration itself "during" the slew doesn't affect the settling time or other specifications, but the forces on the hard point due to the vibration matters.
+
+:::{figure} ./_static/20231129_MTM1M3_hpforces.png
+:name: hard_point_forces_during_topple_block
+:target: ../_images/20231129_MTM1M3_hpforces.png
+:::
 
 ## Earthquake Response 
 
