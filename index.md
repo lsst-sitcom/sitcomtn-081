@@ -167,9 +167,13 @@ There are two topple blocks at az~-75 and az~-53 to detect the direction of the 
    :name: vibration_during_az_slew_toppleblock
    :target: _images/20231129_MTM1M3_vibration.png
 
+   Vibration during the azimuth slew hitting topple block
+
 .. figure:: /_static/20231129_MTM1M3_zoomin.png
    :name: zoom_in_vibration
    :target: _images/20231129_MTM1M3_zoomin.png
+
+   Vibration during the azimuth slew hitting topple block
 
 
 
