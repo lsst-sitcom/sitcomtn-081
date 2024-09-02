@@ -166,11 +166,12 @@ There are two topple blocks at az~-75 and az~-53 to detect the direction of the 
 :::{figure} ./_static/20231129_MTM1M3_vibration.png
 :name: vibration_during_az_slew_toppleblock
 :target: ../_images/20231129_MTM1M3_vibration.png
+:::
 
 :::{figure} ./_static/20231129_MTM1M3_zoomin.png
 :name: zoom_in_vibration
 :target: ../_images/20231129_MTM1M3_zoomin.png
-
+:::
 
 
 ## Earthquake Response 
