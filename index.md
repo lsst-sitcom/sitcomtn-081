@@ -159,6 +159,15 @@ We see no evolution of the vibrations during the state changes of the M1M3 cell.
 PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 state (different colored lines). The black vertical lines show the vibration peaks identified in the TMA torque. It can be seen that there are a few vibration peaks in the hardpoints not seen in the TMA torque.
 :::
 
+## Vibration due to the topple block
+
+There are two topple blocks at az~-75 and az~-53 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
+
+:::{figure} ./_static/20231129_MTM1M3_vibration.png
+
+
+:::{figure} ./_static/20231129_MTM1M3_zoomin.png
+
 ## Earthquake Response 
 
 
