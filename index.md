@@ -164,9 +164,12 @@ PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 s
 There are two topple blocks at az~-75 and az~-53 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
 
 .. figure:: /_static/20231129_MTM1M3_vibration.png
+   :name: vibration_during_az_slew_toppleblock
+   :target: _images/20231129_MTM1M3_vibration.png
 
-
-.. figure::/_static/20231129_MTM1M3_zoomin.png
+.. figure:: /_static/20231129_MTM1M3_zoomin.png
+   :name: zoom_in_vibration
+   :target: _images/20231129_MTM1M3_zoomin.png
 
 
 
