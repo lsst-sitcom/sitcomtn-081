@@ -9,9 +9,9 @@ forces, these events are particularly important to understand in order to verify
 In this technote we discuss a few types of oscillations:
 1. Oscillations During Slews
     - identification of events: [SITCOMTN_81_identify_oscillations_during_slew](https://github.com/lsst-sitcom/notebooks_vandv/blob/6309fee1fd026f1dbbafd5f64ffa503aa45560e4/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN_81_identify_oscillations_during_slew.ipynb)
-    - events caused by azimuth topple blocks: [SITCOMTN_81_20231128_topple_block_slews](https://github.com/lsst-sitcom/notebooks_vandv/blob/6309fee1fd026f1dbbafd5f64ffa503aa45560e4/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN_81_20231128_topple_block_slews.ipynb)
-    - events with unknown cause: [SITCOMTN_81_characterize_oscillations_during_slew] (https://github.com/lsst-sitcom/notebooks_vandv/blob/6309fee1fd026f1dbbafd5f64ffa503aa45560e4/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN_81_characterize_oscillations_during_slew.ipynb)
-2. Strong Continuous oscillations: [SITCOMTN-081_strong_vibration_analysis](https://github.com/lsst-sitcom/notebooks_vandv/blob/develop/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN-081_strong_vibration_analysis.ipynb
+    - events caused by azimuth topple blocks: [SITCOM-1390_topple_block_vibration](https://github.com/lsst-sitcom/notebooks_vandv/blob/tickets/SITCOM-1390/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOM-1390_topple_block_vibration.ipynb)
+    - events with unknown cause: [SITCOMTN_81_characterize_oscillations_during_slew](https://github.com/lsst-sitcom/notebooks_vandv/blob/6309fee1fd026f1dbbafd5f64ffa503aa45560e4/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN_81_characterize_oscillations_during_slew.ipynb)
+2. Strong Continuous oscillations: [SITCOMTN-081_strong_vibration_analysis](https://github.com/lsst-sitcom/notebooks_vandv/blob/develop/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN-081_strong_vibration_analysis.ipynb)
 3. Oscillations due to an earthquake (link to notebook, no m1m3 data)
 
 The data analyzed in this technote is mainly made up of events during the dynamic testing of M1M3 in the second half of 2023. 
