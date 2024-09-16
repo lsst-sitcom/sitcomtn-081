@@ -193,24 +193,6 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 
 Hard point forces were high and exceeding the limit. 
 
-(Something was done at that time : check what was changed) then HP forces were checked again in 2024 January 4th (Brian has comment on Slack with chronograf plots). 
-Here are the plots to compare with 2023 November 29th data.
-
-:::{figure} ./_static/20231129_MTM1M3_vibration.png
-:name: vibration_during_az_slew_toppleblock
-:target: ./_static/20231129_MTM1M3_vibration.png
-:::
-
-:::{figure} ./_static/20231129_MTM1M3_zoomin.png
-:name: zoom_in_vibration
-:target: ./_static/20231129_MTM1M3_zoomin.png
-:::
-
-:::{figure} ./_static/20231129_MTM1M3_hpforces.png
-:name: hard_point_forces_during_topple_block
-:target: ./_static/20231129_MTM1M3_hpforces.png
-:::
-
 ## Earthquake Response 
 
 
