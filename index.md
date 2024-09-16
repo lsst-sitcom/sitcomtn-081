@@ -206,9 +206,9 @@ Here are the plots to compare with 2023 November 29th data.
 :target: ./_static/20231129_MTM1M3_zoomin.png
 :::
 
-:::{figure} ./_static/20240104_MTM1M3_hpforces.png
+:::{figure} ./_static/20231129_MTM1M3_hpforces.png
 :name: hard_point_forces_during_topple_block
-:target: ../_images/20240104_MTM1M3_hpforces.png
+:target: ./_static/20231129_MTM1M3_hpforces.png
 :::
 
 ## Earthquake Response 
