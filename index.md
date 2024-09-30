@@ -82,8 +82,6 @@ Oscillations are initially flagged as times during a slew with large peaks in th
 The red diamonds in this plot note two of these flagged events. 
 :::
 
-
-
 ### Oscillations during azimuth slews
 
 Figure blah show
@@ -98,9 +96,35 @@ Figure blah show
 - amplitude of these slews are small 
 - still do not know the cause of these events 
 
+## Oscillation during elevation slews
+
+During the period from April 2023 to June 2023, several tests were performed on elevation only slews that showcased small oscillations. Currently (September 2024) the origin of these are unknown but they do not seem to compromise the hardpoint limits. Some examples are shown in the following plots. In all cases, it is required that the MTM1M3.logevent_detailedState is ACTIVE or ACTIVEENGINEERING, corresponding to hardpoints being active (mirrors 'raised').
+
+:::{figure} ./_static/hp4_20230518.png
+:name: hardpoints_elevation_only_slew_example1
+:target: ./_static/hp4_20230518.png
+:::
+
+:::{figure} ./_static/hp4_20230529.png
+:name: hardpoints_elevation_only_slew_example2
+:target: ./_static/hp9_20230529.png
+:::
+
+:::{figure} ./_static/hp15_20230615.png
+:name: hardpoints_elevation_only_slew_example3
+:target: ./_static/hp15_20230615.png
+:::
+
+A typical distribution of maximum force on any individual hardpoint for the slews in this period looks like this:
+
+:::{figure} ./_static/histo_hp20230623.png
+:name: typical_hardpoint_distribution
+:target: ./_static/histo_hp20230623.png
+:::
+
+A more relevant strong oscillation is described in the next section.
 
 ## Strong continuous oscillation
-
 
 ### Summary of event 
 
@@ -192,6 +216,7 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 :::
 
 Hard point forces were high and exceeding the limit. 
+
 
 ## Earthquake Response 
 
