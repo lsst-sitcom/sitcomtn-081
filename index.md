@@ -105,7 +105,7 @@ During the period from April 2023 to June 2023, several tests were performed on 
 :target: ./_static/hp4_20230518.png
 :::
 
-:::{figure} ./_static/hp4_20230529.png
+:::{figure} ./_static/hp9_20230529.png
 :name: hardpoints_elevation_only_slew_example2
 :target: ./_static/hp9_20230529.png
 :::
