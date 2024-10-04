@@ -219,34 +219,15 @@ Hard point forces were high and exceeding the limit.
 
 ## Earthquake Response 
 
-:::{figure} ./_static/earthquake_total_acceleration.png
-:name: earthquake_total_acceleration
-:target: ./_static/earthquake_total_acceleration.png
-:::
+![earthquake_total_acceleration](./_static/earthquake_total_acceleration.png)
 
+![earthquake_total_acc_channel](./_static/earthquake_total_acc_channel.png)
 
-:::{figure} ./_static/earthquake_total_acc_channel.png
-:name: earthquake_total_acc_channel
-:target: ./_static/earthquake_total_acc_channel.png
-:::
+![earthqueake_total_acc_axis](./_static/earthqueake_total_acc_axis.png)
 
+![earthquake_psd_channels](./_static/earthquake_psd_channels.png)
 
-:::{figure} ./_static/earthqueake_total_acc_axis.png
-:name: earthqueake_total_acc_axis
-:target: ./_static/earthqueake_total_acc_axis.png
-:::
-
-
-:::{figure} ./_static/earthquake_psd_channels.png
-:name: earthquake_psd_channels
-:target: ./_static/earthquake_psd_channels.png
-:::
-
-
-:::{figure} ./_static/earthquake_psd_channels_zoom.png
-:name: earthquake_psd_channels_zoom
-:target: ./_static/earthquake_psd_channels_zoom.png
-:::
+![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
 
 [2023, 06, 27 - m1m3 test log]: https://confluence.lsstcorp.org/display/LSSTCOM/23.06.27+-+M1M3+Test+Log
