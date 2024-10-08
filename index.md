@@ -219,16 +219,41 @@ Hard point forces were high and exceeding the limit.
 
 ## Earthquake Response 
 
-![earthquake_total_acceleration](./_static/earthquake_total_acceleration.png)
+We study whether the mag~6 earthquake events are safe for the mirror. There are two dates with large aearthquakes:
 
+- 2023-09-06 23:48:15 UTC
+- 2023-10-31 12:33:43 UTC
+
+### Analysis for the evening's event:  2023-09-06
+#### Acceleration
+1.1. Total acceleration telemetry for each of the 3 m1m3 vms channels:
+![earthquake_total_acceleration](./_static/earthquake_total_acceleration.png)
+It is easy to visually determine the moment when the earthquake begins and the movements are recorded.
+
+1.2. Plot of total acceleration telemetry (with an offset) of each axis (xyz) of each channel of the m1m3 vms channels:
+
+We analyze each of the channels separately and in the three axes. In case we could see if one of the axes is more affected than the others.
 ![earthquake_total_acc_channel](./_static/earthquake_total_acc_channel.png)
 
-![earthqueake_total_acc_axis](./_static/earthqueake_total_acc_axis.png)
+1.3. Plot of total acceleration telemetry (with an offset) of each axis (xyz) of the m1m3 vms channels:
 
+Now we combine the different axes (x,y,z), where we can see that the x axis is the most affected by the earthquake movements.
+![earthqueake_total_acc_axis](./_static/earthqueake_total_acc_axis.png)
+The limit required to keep the mirror safe during a mag 6 earthquake must be less than 3000 N. To study this we have to analyze the HP forces along the same axes and compare it with the accelerations.
+
+Unfortunately, we cannot do this analysis because the telescope was stationary and there is no TMA information for 2023.09-06.
+
+#### PSD (Power Spectral Density)
+We are going to analyze the Power Spectral Density
+
+2.1. A Power Spectral Density (psd) of each axis (xyz) of each channel of the m1m3 vms data
 ![earthquake_psd_channels](./_static/earthquake_psd_channels.png)
 
+We change the x-axis to better visualise the data.
 ![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
+### Analysis for the evening's event:  2023-31-10
+Unfortunately, for the second night to be analyzed, 2023-31-10, where there was an earthquake event with mag~6, no information is available. Therefore, it is not possible to make any kind of analysis.
 
 [2023, 06, 27 - m1m3 test log]: https://confluence.lsstcorp.org/display/LSSTCOM/23.06.27+-+M1M3+Test+Log
 [lvv-11306]: https://jira.lsstcorp.org/browse/LVV-11306
