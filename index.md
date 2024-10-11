@@ -215,7 +215,17 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 :target: ./_static/20231129_MTM1M3_hpforces.png
 :::
 
-Hard point forces were high and exceeding the limit. 
+:::{figure} ./_static/20231129_hp_measured_forces.png
+:name: hard_point_measured_forces
+:target: ./_static/20231129_hp_measured_forces.png
+:::
+
+Hard point measured forces on 2024. 01. 04 according to the comment that it was improved, and the 2024. 04. 10 data after the topple block shock absorber was repaird were chosen for the comparison with 2023. 11. 29 data.
+
+:::{figure} ./_static/20240104_hp_measured_forces.png
+:name: hard_point_measured_forces_Jan24
+:target: ./_static/20240104_hp_measured_forces.png
+:::
 
 ## Earthquake Response 
 
