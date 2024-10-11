@@ -220,12 +220,14 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 :target: ./_static/20231129_hp_measured_forces.png
 :::
 
-Hard point measured forces on 2024. 01. 04 according to the comment that it was improved, and the 2024. 04. 10 data after the topple block shock absorber was repaird were chosen for the comparison with 2023. 11. 29 data.
+Following plot shows hard point measured forces on 2024. 01. 04 to compare with the data from 2023. 11. 29, according to the comment on Slack that it was improved
 
 :::{figure} ./_static/20240104_hp_measured_forces.png
 :name: hard_point_measured_forces_Jan24
 :target: ./_static/20240104_hp_measured_forces.png
 :::
+
+On 2024. 04. 04, there was a ticket SUMMIT-8775 of TMA topple block shock absorber repair, but we don't have M1M3 data on TMA after that, yet. 
 
 ## Earthquake Response 
 
