@@ -217,6 +217,8 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 :target: ./_static/20231129_MTM1M3_hpforces.png
 :::
 
+Plots above shows the hard point forces Fx, Fy, Fz, and the plot below shows the hard point measured forces on each Hp.
+
 :::{figure} ./_static/20231129_hp_measured_forces.png
 :name: hard_point_measured_forces
 :target: ./_static/20231129_hp_measured_forces.png
