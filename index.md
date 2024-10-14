@@ -203,8 +203,6 @@ Following plots show one event of vibration while TMA was moving in azimuth from
 :target: ./_static/20231129_MTM1M3_vibration.png
 :::
 
-And below is zoomed in plot.
-
 :::{figure} ./_static/20231129_MTM1M3_zoomin.png
 :name: zoom_in_vibration
 :target: ./_static/20231129_MTM1M3_zoomin.png
