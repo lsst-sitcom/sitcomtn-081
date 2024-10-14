@@ -194,7 +194,7 @@ On 2023 November 29, this is the histogram of the angle where vibration event du
 :target: ./_static/20231129_toppleblock_position.png
 :::
 
-The result matched with the actual position of the topple block, and it hits the topple block according to the direction TMA is rotating from, +- 00 degrees from the center of topple block. 
+The result matched with the actual position of the topple block, and it hits the topple block according to the direction TMA is rotating from, few degrees up and down from the center of topple block. 
 
 Following plots show one event of vibration while TMA was moving in azimuth from -25 to -125 degrees.
 
