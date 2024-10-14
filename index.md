@@ -144,14 +144,14 @@ But, this event gives us the opportunity to understand how large vibrations will
 
 :::{figure} ./_static/20230627_mtmount.elevation.actualTorque.png
 :name: fig-oscillation-0627-torque
-:target: ../_images/20230627_mtmount.elevation.actualTorque.png
+:target: ./_static/20230627_mtmount.elevation.actualTorque.png
 
 Chronograf screenshot of elevation torque during oscillation event.
 :::
 
 :::{figure} ./_static/20230627_mtmount.elevation.actualTorqueZoom.png
 :name: fig-oscillation-0627-torque-zoom
-:target: ../_images/20230627_mtmount.elevation.actualTorqueZoom.png
+:target: ./_static/20230627_mtmount.elevation.actualTorqueZoom.png
 
 Zoom in of oscillations showing periodic behavior.
 :::
@@ -161,7 +161,7 @@ The 12-minute duration can be seen with a peak to peak amplitude of ~500k Nm (+/
 
 :::{figure} ./_static/20230627_MTM1M3.hardpointActuatorData.measuredForceN.png
 :name: fig-oscillation-0627-hardpoint-force
-:target: ../_images/20230627_MTM1M3.hardpointActuatorData.measuredForceN.png
+:target: ./_static/20230627_MTM1M3.hardpointActuatorData.measuredForceN.png
 
 Chronograf screenshot of hardpoint forces during event.
 :::
@@ -185,7 +185,7 @@ PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 s
 
 ## Vibration due to the topple block
 
-There are two topple blocks at az~-70 and az~-50 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
+There are two topple blocks at az -70 and az -50 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
 
 On 2023 November 29, this is the histogram of the angle where vibration event due to topple blcok was happening.
 
@@ -222,12 +222,6 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 
 Following plot shows hard point measured forces on 2024. 01. 04 to compare with the data from 2023. 11. 29, according to the comment on Slack that it was improved
 
-:::{figure} ./_static/20240104_hp_measured_forces.png
-:name: hard_point_measured_forces_Jan24
-:target: ./_static/20240104_hp_measured_forces.png
-:::
-
-On 2024. 04. 04, there was a ticket SUMMIT-8775 of TMA topple block shock absorber repair, but we don't have M1M3 data on TMA after that, yet. 
 
 ## Earthquake Response 
 
