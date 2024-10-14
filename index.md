@@ -219,21 +219,6 @@ Vibration itself "during" the slew doesn't affect the settling time or other spe
 
 Plots above shows the hard point forces Fx, Fy, Fz, and the plot below shows the hard point measured forces on each Hp.
 
-:::{figure} ./_static/20231129_hp_measured_forces.png
-:name: hard_point_measured_forces
-:target: ./_static/20231129_hp_measured_forces.png
-:::
-
-Following plot shows hard point measured forces on 2024. 01. 04 to compare with the data from 2023. 11. 29, according to the comment on Slack that it was improved
-
-
-:::{figure} ./_static/20240104_hp_measured_forces.png
-:name: hard_point_measured_forces_Jan24
-:target: ./_static/20240104_hp_measured_forces.png
-:::
-
-On 2024. 04. 04, there was a ticket SUMMIT-8775 of TMA topple block shock absorber repair, but we don't have M1M3 data on TMA after that, yet. 
-
 ## Earthquake Response 
 
 We study whether the mag~6 earthquake events are safe for the mirror. There are two dates with large aearthquakes:
