@@ -37,10 +37,15 @@ This is linked to SITCOM-918 -->
 
 ## Introduction
 
-The structure of this technote is as follows, first we discuss oscillation events during a slew. This includes the identification and characterization of these events as well as possible causes. Then, we present a select set of other oscillations that occured outside of slewing conditions.
+To ensure glass safety and the safety of all the components of the Vera C. Rubin Observatory it is imperative that the system is stable and does not expierence any large oscillations or activate any resonance modes during operations. 
+In order to verify the safety of the as build system, we must investigate any identified oscillations. 
+In this document we present a few of these investigations that include regularly seen oscillations during slews in both azimuth and elevation as well one time events due to problems in the control software or environmental effects such as earthquakes.
+The structure of this technote is as follows, first we discuss regularly seen oscillation events during a slew. 
+This includes the identification and characterization of these events as well as possible causes. 
+Then, we present a select set of other one time oscillation events that occured outside of normal operations.
 
 
-- Identification of slew events
+<!-- - Identification of slew events
 - characterization of oscillation events
 
 > - hardpoints
@@ -51,18 +56,20 @@ The structure of this technote is as follows, first we discuss oscillation event
 - Fourier transform of everything
 - continuous oscillations at low elevation
 
-For the M1M3 oscillations during a slew w
+For the M1M3 oscillations during a slew w -->
 
 ## Oscillations During Slews
 
 ### Identification of events
 
-These oscillation events were originally discovered by visual inspection of the
-measured forces on the hardpoint actuators during a slew. This data can be accessed in the EFD under the table `lsst.sal.MTM1M3.hardpointActuatorData` with the columns starting with `measuredForce`.
-To identify the oscillation events during a slew we used a rolling standard deviation of the measured force on each of the six hardpoints.
-A 2 second window was used for the rolling and all peaks with a standard deviation above 100 N were flagged.
-Next, for each hardpoint individually peaks within 2 seconds were combined in order to only flag once on each potential oscillation event.
-Then, we used a 4-second window to combine peaks across hardpoints only keeping events that are detected in more than 4 of the hardpoints.
+Re-occuring oscilations in the M1M3 mirror cell + mirror system were identified, initially, through visual inspection of the measured forces on the hardpoint actuators during a slew. 
+These hardpont force telemetries can be accessed in the EFD under the table `lsst.sal.MTM1M3.hardpointActuatorData` with the columns starting with `measuredForce`.
+After the inital identification of a subset of these events we developed a heuristic method to more systematically search for them.
+We compute a rolling standard deviation of the measured force on each of the six hardpoints using a 2 second window.
+Then, we flag all times where the rolling standard deviation was above 100 N.
+Next, for each hardpoint individually peaks within 2 seconds were accociated into a single detection in order to only flag once on each potential oscillation event.
+Finally, we used a 4-second window to combine detections across hardpoints only keeping events that are detected in more than 4 of the hardpoints.
+This method, is fairly complete in flagging oscillitory events, but reqires a fair amount of visual inspection to remove false positives.
 
 An example of how oscillation events are identified is shown in figure 1.
 
@@ -82,23 +89,75 @@ Oscillations are initially flagged as times during a slew with large peaks in th
 The red diamonds in this plot note two of these flagged events. 
 :::
 
-### Oscillations during azimuth slews
+The next two subsections describe the classes of events that we discovered using this identification process. 
 
-Figure blah show
+### Events during azimuth slews: vibrations due to the topple blocks
 
-![](./_static/elevation_vs_time.png)
-*Caption for the image.*
+There are two topple blocks at az -70 and az -50 to detect the direction of the rotation in azimuth and act as a limit switch preventing the TMA from slewing in one direction over the maximum angle of its rotation. 
+As the TMA slews in azimuth it hits the topple block and flips it, this contact generates vibrations in the full system that we have analyzed. 
 
-### Oscillations during elevation slews 
+We were able to identify and associate this class of events due to a number of azimuth only slews on on November 29 2023. 
+Below we show a histogram of the aizmuth angle of the telescope when vibrations were detected. 
+
+
+:::{figure} ./_static/20231129_toppleblock_position.png
+:name: histogram_angle_topple_block
+:target: ./_static/20231129_toppleblock_position.png
+:::
+Clearly these vibrations only occur around two aizmuth locations centered on -70 and -50. 
+These positions roughly match the actual locations of the topple blocks. 
+The spread in angle is due to the direction the TMA is rotating and the postion of the topple blocks when the collision occurs.
+Therefore there is a range of a few degrees from the center of the topple block where the events can occur. 
+
+The following plots show one such vibration event while TMA was moving in azimuth from -25 to -125 degrees.
+
+:::{figure} ./_static/20231129_MTM1M3_vibration.png
+:name: vibration_during_az_slew_toppleblock
+:target: ./_static/20231129_MTM1M3_vibration.png
+:::
+
+:::{figure} ./_static/20231129_MTM1M3_zoomin.png
+:name: zoom_in_vibration
+:target: ./_static/20231129_MTM1M3_zoomin.png
+:::
+
+This vibration itself "during" the slew doesn't affect the settling time or other specifications, but the forces seen on the hard point are felt by the glass and could have detrimental effects.
+
+Here we show a plot of the total hard point forces Fx, Fy, Fz and TMA acceleration during an event. 
+:::{figure} ./_static/20231129_MTM1M3_hpforces.png
+:name: hard_point_forces_during_topple_block
+:target: ./_static/20231129_MTM1M3_hpforces.png
+:::
+
+The plot below shows and example of the measured forces on each of the 6 hardpoints from November 29 2023, where the amplitude of the vibrations seems to be more than 500 N.
+
+:::{figure} ./_static/20231129_hp_measured_forces.png
+:name: hard_point_measured_forces
+:target: ./_static/20231129_hp_measured_forces.png
+:::
+
+Next, we show the same plot for an event on January 01 2024 where according to the comment on Slack that it was improved (**@HyeYun can we link this comment?**)
+
+:::{figure} ./_static/20240104_hp_measured_forces.png
+:name: hard_point_measured_forces_Jan
+:target: ./_static/20240104_hp_measured_forces.png
+:::
+
+On April 04 2024, we repaired the TMA topple block shock absorber ([SUMMIT-8775](https://rubinobs.atlassian.net/browse/SUMMIT-8775)), but there is no M1M3 data on TMA after that. **Do we have data for this now?** 
+
+<!-- ### Oscillations during elevation slews 
 
 - types of these events we see (upward and downward shift)
 - we see in the ims data as well 
 - amplitude of these slews are small 
-- still do not know the cause of these events 
+- still do not know the cause of these events  -->
 
-## Oscillation during elevation slews
+### Events during elevation slews: unkown cause
 
-During the period from April 2023 to June 2023, several tests were performed on elevation only slews that showcased small oscillations. Currently (September 2024) the origin of these are unknown but they do not seem to compromise the hardpoint limits. Some examples are shown in the following plots. In all cases, it is required that the MTM1M3.logevent_detailedState is ACTIVE or ACTIVEENGINEERING, corresponding to hardpoints being active (mirrors 'raised').
+During the period from April 2023 to June 2023, several tests were performed consisting of elevation only slews that showcased small oscillations. 
+Currently, (September 2024) the origin of these are unknown but they do not seem to compromise the hardpoint limits. 
+Some examples are shown in the following plots. 
+In all cases, it is required that the `MTM1M3.logevent_detailedState` is `ACTIVE` or `ACTIVEENGINEERING`, corresponding to hardpoints being active (mirrors 'raised').
 
 :::{figure} ./_static/hp4_20230518.png
 :name: hardpoints_elevation_only_slew_example1
@@ -122,7 +181,6 @@ A typical distribution of maximum force on any individual hardpoint for the slew
 :target: ./_static/histo_hp20230623.png
 :::
 
-A more relevant strong oscillation is described in the next section.
 
 ## Strong continuous oscillation
 
@@ -183,53 +241,6 @@ We see no evolution of the vibrations during the state changes of the M1M3 cell.
 PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 state (different colored lines). The black vertical lines show the vibration peaks identified in the TMA torque. It can be seen that there are a few vibration peaks in the hardpoints not seen in the TMA torque.
 :::
 
-## Vibration due to the topple block
-
-There are two topple blocks at az -70 and az -50 to detect the direction of the rotation in azimuth and to prevent TMA from slewing in one direction over the maximum angle of its rotation. While hitting the topple block and flipping it, it generates vibration and we have studied the vibration and the hardpoint forces fluctuating due to the topple blocks.
-
-On 2023 November 29, this is the histogram of the angle where vibration event due to topple blcok was happening.
-
-:::{figure} ./_static/20231129_toppleblock_position.png
-:name: histogram_angle_topple_block
-:target: ./_static/20231129_toppleblock_position.png
-:::
-
-The result matched with the actual position of the topple block, and it hits the topple block according to the direction TMA is rotating from, few degrees up and down from the center of topple block. 
-
-Following plots show one event of vibration while TMA was moving in azimuth from -25 to -125 degrees.
-
-:::{figure} ./_static/20231129_MTM1M3_vibration.png
-:name: vibration_during_az_slew_toppleblock
-:target: ./_static/20231129_MTM1M3_vibration.png
-:::
-
-:::{figure} ./_static/20231129_MTM1M3_zoomin.png
-:name: zoom_in_vibration
-:target: ./_static/20231129_MTM1M3_zoomin.png
-:::
-
-Vibration itself "during" the slew doesn't affect the settling time or other specifications, but the forces on the hard point due to the vibration matters.
-
-:::{figure} ./_static/20231129_MTM1M3_hpforces.png
-:name: hard_point_forces_during_topple_block
-:target: ./_static/20231129_MTM1M3_hpforces.png
-:::
-
-Plots above shows the hard point forces Fx, Fy, Fz, and the plot below shows the hard point measured forces on each Hp.
-
-:::{figure} ./_static/20231129_hp_measured_forces.png
-:name: hard_point_measured_forces
-:target: ./_static/20231129_hp_measured_forces.png
-:::
-
-Following plot shows hard point measured forces on 2024. 01. 04 to compare with the data from 2023. 11. 29, according to the comment on Slack that it was improved
-
-:::{figure} ./_static/20240104_hp_measured_forces.png
-:name: hard_point_measured_forces_Jan
-:target: ./_static/20240104_hp_measured_forces.png
-:::
-
-On 2024. 04. 04, there was a ticket SUMMIT-8775 of TMA topple block shock absorber repair, but we don't have M1M3 data on TMA after that, yet. 
 
 ## Earthquake Response 
 
