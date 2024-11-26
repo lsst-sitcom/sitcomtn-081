@@ -17,15 +17,15 @@ In this technote we discuss a few types of oscillations:
 The data analyzed in this technote is mainly made up of events during the dynamic testing of M1M3 in the second half of 2023. 
 The relevant requriements are
 - [LVV-11306](https://jira.lsstcorp.org/browse/LVV-11306): All vibration sources from the mirror support system combined SHALL not produce more than +/- 0.38 micron of mirror piston motion, +/0.23 micron of mirror decenter and +/ 1 e-6 degree of mirror tilt (RMS values) (see document-7271).
-- For repeating oscillations we want the amplitude of oscillations be *1/10?* of breakaway force (3000N), or less than 300N (where is requirement for this). See disscussion under GSCN4 in [this confluence page](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=222730451#SystemIntegrationTesting/VerificationBeforeGlassinstallation-RequirementsandCriteriaforM1M3GlassSafety).
+- For repeating oscillations we want the amplitude of oscillations be less than 400 N. This is the requirement for the mirror safety for 100,000 cycles. See disscussion under GSCN4 in [this confluence page](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=222730451#SystemIntegrationTesting/VerificationBeforeGlassinstallation-RequirementsandCriteriaforM1M3GlassSafety).
 
 A summary of the analysis in this technote can be found in the below table. 
 
 
 | Type of Hardpoint Oscillation | Amplitude [N] | Repeating | Cause         | Requirements  [N]   |
 |-------------------------------|---------------|-----------|---------------|------------------|
-| Azimuth Slews                     | ###           | Yes       | topple blocks         | < 300    |
-| Elevation Slews                   | ###           | Yes       | Unkown                | < 300    |
+| Azimuth Slews                     | ~500          | Yes       | topple blocks         | < 400    |
+| Elevation Slews                   | ###           | Yes       | Unkown                | < 400    |
 | Strong continuous oscillation     | ###           | No        | control software      | < 3000    |
 | Earthquake                        | No M1M3 Data  | Yes       | Mag ~6 earthquake    |  < 3000   |
 
@@ -136,14 +136,22 @@ The plot below shows and example of the measured forces on each of the 6 hardpoi
 :target: ./_static/20231129_hp_measured_forces.png
 :::
 
-Next, we show the same plot for an event on January 01 2024 where according to the comment on Slack that it was improved (**@HyeYun can we link this comment?**)
+Next, we show the same plot for an event on January 01 2024 where according to the comment on Slack that it was improved ([Slack message link](https://rubin-obs.slack.com/archives/C07Q45NBH3R/p1704371624126769))
 
 :::{figure} ./_static/20240104_hp_measured_forces.png
 :name: hard_point_measured_forces_Jan
 :target: ./_static/20240104_hp_measured_forces.png
 :::
 
-On April 04 2024, we repaired the TMA topple block shock absorber ([SUMMIT-8775](https://rubinobs.atlassian.net/browse/SUMMIT-8775)), but there is no M1M3 data on TMA after that. **Do we have data for this now?** 
+On April 04 2024, we repaired the TMA topple block shock absorber ([SUMMIT-8775](https://rubinobs.atlassian.net/browse/SUMMIT-8775)), but there is no M1M3 data on TMA after that.
+
+On November 11 2024, we tested the TMA with 5 % speed, and the HP forces when passing the topple block, are below 50 N. It doesn't show the mirror safety yet, but we can say the vibration during the tracking won't affect the image quality. 
+
+:::{figure} ./_static/20241111_speed5_hp_measured_forces.png
+:name: hard_point_measured_forces_Nov_2024_5percent
+:target: ./_static/20241111_speed5_hp_measured_forces.png
+:::
+
 
 <!-- ### Oscillations during elevation slews 
 
@@ -277,7 +285,7 @@ We are going to analyze the Power Spectral Density
 We change the x-axis to better visualise the data.
 ![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
-### Analysis for the evening's event:  2023-31-10
+### Analysis for the evening's event:  2023-10-31
 Unfortunately, for the second night to be analyzed, 2023-31-10, where there was an earthquake event with mag~6, no information is available. Therefore, it is not possible to make any kind of analysis.
 
 [2023, 06, 27 - m1m3 test log]: https://confluence.lsstcorp.org/display/LSSTCOM/23.06.27+-+M1M3+Test+Log
