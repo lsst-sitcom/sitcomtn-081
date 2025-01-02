@@ -238,7 +238,7 @@ If the M1M3 cell had any positive feedback during the event, we would expect the
 Based on the measured force image above the amplitude is roughly constant for each state of the mirror, and the Mirror did not break away.
 *what is requirement for continuous oscillation: LTS-88-REQ-0065 All vibration sources from the mirror support system combined SHALL not produce more than +/- 0.38 micron of mirror piston motion, +/0.23 micron of mirror decenter and +/ 1 e-6 degree of mirror tilt (RMS values)*
 [LVV-11306]
-Below we show a PSD of the event computing it for the total event, and each of the different states of the M1M3 during the event.
+Below we show a Power Spectral Density (PSD) of the event computing it for the total event, and each of the different states of the M1M3 during the event.
 We see no evolution of the vibrations during the state changes of the M1M3 cell.
 **From this we conclude the cell was driven by the TMA but did not contain any positive feedback or coupling with the TMA, for this event**.
 
@@ -252,7 +252,7 @@ PSD of hardpoint forces for 3 of the hardpoints showing no evolution with M1M3 s
 
 ## Earthquake Response 
 
-We study whether the mag~6 earthquake events are safe for the mirror. There are two dates with large aearthquakes:
+We study whether the mag~6 earthquake events are safe for the mirror. There are two dates with large earthquakes:
 
 - 2023-09-06 23:48:15 UTC
 - 2023-10-31 12:33:43 UTC
