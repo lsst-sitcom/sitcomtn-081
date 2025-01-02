@@ -4,8 +4,8 @@
 
 ## Abstract
 
-This technote contains describes oscillations seen in the M1M3 cell hardpoint
-forces, these events are particularly important to understand in order to verify that it is safe to put glass on the M1M3 mirror cell.
+This technote describes oscillations seen in the M1M3 cell hardpoint
+forces, these events are particularly important to understand in order to certify that the glass was safely installed on the M1M3 mirror cell, it's important to verify any vibrations that could potentially damage the mirror.
 In this technote we discuss a few types of oscillations:
 1. Oscillations During Slews
     - identification of events: [SITCOMTN_81_identify_oscillations_during_slew](https://github.com/lsst-sitcom/notebooks_vandv/blob/6309fee1fd026f1dbbafd5f64ffa503aa45560e4/notebooks/tel_and_site/subsys_req_ver/m1m3/SITCOMTN_81_identify_oscillations_during_slew.ipynb)
@@ -17,7 +17,7 @@ In this technote we discuss a few types of oscillations:
 The data analyzed in this technote is mainly made up of events during the dynamic testing of M1M3 in the second half of 2023. 
 The relevant requriements are
 - [LVV-11306](https://jira.lsstcorp.org/browse/LVV-11306): All vibration sources from the mirror support system combined SHALL not produce more than +/- 0.38 micron of mirror piston motion, +/0.23 micron of mirror decenter and +/ 1 e-6 degree of mirror tilt (RMS values) (see document-7271).
-- For repeating oscillations we want the amplitude of oscillations be less than 400 N. This is the requirement for the mirror safety for 100,000 cycles. See disscussion under GSCN4 in [this confluence page](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=222730451#SystemIntegrationTesting/VerificationBeforeGlassinstallation-RequirementsandCriteriaforM1M3GlassSafety).
+- For repeating oscillations we want the amplitude of oscillations be less than 400 N. This is the requirement for the mirror safety for 100,000 cycles. See disscussion under Glass Safty Criteria Number 4 (GSCN4) in [this confluence page](https://confluence.lsstcorp.org/pages/viewpage.action?pageId=222730451#SystemIntegrationTesting/VerificationBeforeGlassinstallation-RequirementsandCriteriaforM1M3GlassSafety).
 
 A summary of the analysis in this technote can be found in the below table. 
 
@@ -25,7 +25,7 @@ A summary of the analysis in this technote can be found in the below table.
 | Type of Hardpoint Oscillation | Amplitude [N] | Repeating | Cause         | Requirements  [N]   |
 |-------------------------------|---------------|-----------|---------------|------------------|
 | Azimuth Slews                     | ~500          | Yes       | topple blocks         | < 400    |
-| Elevation Slews                   | ###           | Yes       | Unkown                | < 400    |
+| Elevation Slews                   | ###           | Yes       | Unknown                | < 400    |
 | Strong continuous oscillation     | ###           | No        | control software      | < 3000    |
 | Earthquake                        | No M1M3 Data  | Yes       | Mag ~6 earthquake    |  < 3000   |
 
@@ -62,7 +62,7 @@ For the M1M3 oscillations during a slew w -->
 
 ### Identification of events
 
-Re-occuring oscilations in the M1M3 mirror cell + mirror system were identified, initially, through visual inspection of the measured forces on the hardpoint actuators during a slew. 
+Re-occuring oscillations in the M1M3 mirror cell + mirror system were identified, initially, through visual inspection of the measured forces on the hardpoint actuators during a slew. 
 These hardpont force telemetries can be accessed in the EFD under the table `lsst.sal.MTM1M3.hardpointActuatorData` with the columns starting with `measuredForce`.
 After the inital identification of a subset of these events we developed a heuristic method to more systematically search for them.
 We compute a rolling standard deviation of the measured force on each of the six hardpoints using a 2 second window.
@@ -160,7 +160,7 @@ On November 11 2024, we tested the TMA with 5 % speed, and the HP forces when pa
 - amplitude of these slews are small 
 - still do not know the cause of these events  -->
 
-### Events during elevation slews: unkown cause
+### Events during elevation slews: unknown cause
 
 During the period from April 2023 to June 2023, several tests were performed consisting of elevation only slews that showcased small oscillations. 
 Currently, (September 2024) the origin of these are unknown but they do not seem to compromise the hardpoint limits. 
@@ -286,7 +286,7 @@ We change the x-axis to better visualise the data.
 ![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
 ### Analysis for the evening's event:  2023-10-31
-Unfortunately, for the second night to be analyzed, 2023-31-10, where there was an earthquake event with mag~6, no information is available. Therefore, it is not possible to make any kind of analysis.
+Unfortunately, for the second night to be analyzed, 2023-10-31, where there was an earthquake event with mag~6, no information is available. Therefore, it is not possible to make any kind of analysis.
 
 [2023, 06, 27 - m1m3 test log]: https://confluence.lsstcorp.org/display/LSSTCOM/23.06.27+-+M1M3+Test+Log
 [lvv-11306]: https://jira.lsstcorp.org/browse/LVV-11306
