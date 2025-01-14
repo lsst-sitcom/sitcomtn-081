@@ -206,7 +206,7 @@ These vibrations were driven by the TMA elevation drives, not another subsytem.
 More details can be found in the test log ([2023, 06, 27 - M1M3 Test Log]), and jira ticket [SITCOM-1089].
 It is thought that this event occurred because the TMA was slewed/homed with the force balance system on, subsequently the control software was changed to not allow this state in the future.
 But, this event gives us the opportunity to understand how large vibrations will affect the M1M3 cell.
-**In particular, we wanted to understand if the TMA driven oscillations resonated with the M1M3 force balance system causing a positive feedback loop in the force on the mirror.**
+**In particular, we wanted to understand if the TMA driven oscillations could resonate with the M1M3 force balance system and cause a positive feedback loop, leading to an increase in the measured forces on the mirror.**
 
 :::{figure} ./_static/20230627_mtmount.elevation.actualTorque.png
 :name: fig-oscillation-0627-torque
@@ -235,9 +235,8 @@ Chronograf screenshot of hardpoint forces during event.
 The above image shows the hardpoint forces, it can be noted that the event starts at 01:08.
 To begin with the mirror was raised with the force balance system was active, then at 01:11:15 the force balance system was deactivated, starting at 01:11:45 the mirror was lowered and it reached the static supports at ~01:15:15.
 If the M1M3 cell had any positive feedback during the event, we would expect the amplitude of the hardpoint measured forces to change with time. Or we would expect the observed frequencies of the oscillation to change with the state of the M1M3.
-Based on the measured force image above the amplitude is roughly constant for each state of the mirror, and the Mirror did not break away.
-*what is requirement for continuous oscillation: LTS-88-REQ-0065 All vibration sources from the mirror support system combined SHALL not produce more than +/- 0.38 micron of mirror piston motion, +/0.23 micron of mirror decenter and +/ 1 e-6 degree of mirror tilt (RMS values)*
-[LVV-11306]
+Based on the measured force image above the amplitude is roughly constant for each state of the mirror, and the mirror did not break away. There is no correlation between the TMA oscillation and the hardpoints behavior in the same period.
+
 Below we show a Power Spectral Density (PSD) of the event computing it for the total event, and each of the different states of the M1M3 during the event.
 We see no evolution of the vibrations during the state changes of the M1M3 cell.
 **From this we conclude the cell was driven by the TMA but did not contain any positive feedback or coupling with the TMA, for this event**.
