@@ -7,11 +7,26 @@ github_default_branch = "main"
 organization.name = "Vera C. Rubin Observatory"
 organization.ror = "https://ror.org/048g3cy84"
 license.id = "CC-BY-4.0"
+
 [[technote.authors]]
 name = {given = "Peter S.", family = "Ferguson"}
 internal_id = "fergusonps"
 orcid = "https://orcid.org/0000-0001-6957-1627"
-[[technote.authors.affiliations]]
-name = "Department of Physics"
-internal_id = "WisconsinMadison"
-address = "University of Wisconsin-Madison, Madison, WI 53706, USA"
+affiliations = [{name= "Institute for Data-intensive Research in Astrophysics and Cosmology, University of Washington,Seattle, WA"}]
+
+[[technote.authors]]
+name = {given = "Hye Yun", family = "Park"}
+internal_id = "parkhy"
+orcid = "https://orcid.org/0000-0002-7295-2743"
+affiliations = [{name= "Department of Physics, Duke University, Durham, NC 27708, USA"}]
+
+[[technote.authors]]
+name = {given = "Ignacio", family = "Sevilla-Noarbe"}
+internal_id = "sevillai"
+orcid = "https://orcid.org/0000-0002-1831-1953"
+affiliations = [{name= "Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas, Av. Complutense 40, 28040 Madrid, Spain"}]
+
+[[technote.authors]]
+name = {given = "Laura", family = "Toribio San Cipriano"}
+internal_id = "toribiol"
+affiliations = [{name= "Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas, Av. Complutense 40, 28040 Madrid, Spain"}]
