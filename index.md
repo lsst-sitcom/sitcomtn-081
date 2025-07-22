@@ -286,7 +286,7 @@ We change the x-axis to better visualise the data.
 
 ### Analysis for the evening's event:  2025-03-18
 
-There was big earthquake on March 18th 2025, and faulted mirrors. Mirrors are supposed to be designed to react to the earthquake, to adjust themselves to the shock, so this day event raised the question to the mechanism of the mirrors, and to improve them.  
+There was big earthquake with magnitude 5.3, on March 18th 2025, and faulted mirrors. Mirrors are supposed to be designed to react to the earthquake, to adjust themselves to the shock, so this day event raised the question to the mechanism of the mirrors, and to improve them.  
  
 :::{figure} ./_static/20250318_earthquake.png
 :name: fig-earthquake-2025Mar18
