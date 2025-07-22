@@ -284,8 +284,16 @@ We are going to analyze the Power Spectral Density
 We change the x-axis to better visualise the data.
 ![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
-### Analysis for the evening's event:  2023-10-31
-Unfortunately, for the second night to be analyzed, 2023-10-31, where there was an earthquake event with mag~6, no information is available. Therefore, it is not possible to make any kind of analysis.
+### Analysis for the evening's event:  2025-03-18
+
+
+:::{figure} ./_static/20250318_earthquake1.png
+:name: fig-earthquake-2025march18_1
+:target: ../_images/20250318_earthquake1.png
+
+:::{figure} ./_static/20250318_earthquake2.png
+:name: fig-earthquake-2025march18_2
+:target: ../_images/20250318_earthquake2.png
 
 [2023, 06, 27 - m1m3 test log]: https://confluence.lsstcorp.org/display/LSSTCOM/23.06.27+-+M1M3+Test+Log
 [lvv-11306]: https://jira.lsstcorp.org/browse/LVV-11306
