@@ -284,9 +284,19 @@ We are going to analyze the Power Spectral Density
 We change the x-axis to better visualise the data.
 ![earthquake_psd_channels_zoom](./_static/earthquake_psd_channels_zoom.png)
 
+### Analysis for the evening's event:  2025-03-18
+
+There was big earthquake on March 18th 2025, and faulted mirrors. Mirrors are supposed to be designed to react to the earthquake, to adjust themselves to the shock, so this day event raised the question to the mechanism of the mirrors, and to improve them.  
+ 
+:::{figure} ./_static/20250318_earthquake.png
+:name: fig-earthquake-2025Mar18
+:target: ../_images/20250318_earthquake.png
+:::
+
 ### Analysis for the evening's event:  2025-04-24
 
-
+On April 24th 2025, we had big earthquake with magnitude 5.1, and also following with multiple earthquakes happened in row. This time all the systems including mirrors didn't fault and reacted to the shock well. 
+ 
 :::{figure} ./_static/20250424_earthquake1.png
 :name: fig-earthquake-2025Apr24_1
 :target: ../_images/20250424_earthquake1.png
